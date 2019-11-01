@@ -4,6 +4,7 @@
   <form>
     <v-text-field
       v-model="name"
+      name="name"
       :error-messages="nameErrors"
       :counter="20"
       label="Name"
@@ -13,6 +14,7 @@
     ></v-text-field>
     <v-text-field
       v-model="email"
+      name="email"
       :error-messages="emailErrors"
       label="E-mail"
       required
@@ -21,6 +23,7 @@
     ></v-text-field>
     <v-text-field
       v-model="password"
+      name="password"
       :error-messages="passwordErrors"
       label="Password"
       required
@@ -29,6 +32,7 @@
     ></v-text-field>
     <v-text-field
       v-model="password"
+      name="confirmPassword"
       :error-messages="passwordErrors"
       label="Confirm Password"
       required
@@ -37,6 +41,7 @@
     ></v-text-field>
     <v-checkbox
       v-model="checkbox"
+      name="checkbox"
       :error-messages="checkboxErrors"
       label="Do you agree?"
       required
